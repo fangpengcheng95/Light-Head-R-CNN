@@ -1,23 +1,12 @@
-# Detectron
-
-Detectron is Facebook AI Research's software system that implements state-of-the-art object detection algorithms, including [Mask R-CNN](https://arxiv.org/abs/1703.06870). It is written in Python and powered by the [Caffe2](https://github.com/caffe2/caffe2) deep learning framework.
-
-At FAIR, Detectron has enabled numerous research projects, including: [Feature Pyramid Networks for Object Detection](https://arxiv.org/abs/1612.03144), [Mask R-CNN](https://arxiv.org/abs/1703.06870), [Detecting and Recognizing Human-Object Interactions](https://arxiv.org/abs/1704.07333), [Focal Loss for Dense Object Detection](https://arxiv.org/abs/1708.02002), [Non-local Neural Networks](https://arxiv.org/abs/1711.07971), [Learning to Segment Every Thing](https://arxiv.org/abs/1711.10370), and [Data Distillation: Towards Omni-Supervised Learning](https://arxiv.org/abs/1712.04440).
-
-<div align="center">
-  <img src="demo/output/33823288584_1d21cf0a26_k_example_output.jpg" width="700px" />
-  <p>Example Mask R-CNN output.</p>
-</div>
-
 ## Introduction
 
-The goal of Detectron is to provide a high-quality, high-performance
-codebase for object detection *research*. It is designed to be flexible in order
-to support rapid implementation and evaluation of novel research. Detectron
-includes implementations of the following object detection algorithms:
-
-- [Mask R-CNN](https://arxiv.org/abs/1703.06870) -- *Marr Prize at ICCV 2017*
-- [RetinaNet](https://arxiv.org/abs/1708.02002) -- *Best Student Paper Award at ICCV 2017*
+The goal of this project is to implement [Light Head R-CNN](https://arxiv.org/abs/1711.07264)  using Detectron platform. 
+## Already implemented
+- Light Head R-CNN & RPN & unshared weights of convolution layer in neural network head
+- Light Head R-CNN & FPN(Feature Map Pyramid) & shared weights of convolution layer in neural network head
+## Platform Introduction
+The goal of Detectron is to provide a high-quality, high-performance codebase for object detection research. It is designed to be flexible in order to support rapid implementation and evaluation of novel research. Detectron includes implementations of the following object detection algorithms:
+- [Mask R-CNN](https://arxiv.org/abs/1703.06870) 
 - [Faster R-CNN](https://arxiv.org/abs/1506.01497)
 - [RPN](https://arxiv.org/abs/1506.01497)
 - [Fast R-CNN](https://arxiv.org/abs/1504.08083)
@@ -28,13 +17,11 @@ using the following backbone network architectures:
 - [ResNeXt{50,101,152}](https://arxiv.org/abs/1611.05431)
 - [ResNet{50,101,152}](https://arxiv.org/abs/1512.03385)
 - [Feature Pyramid Networks](https://arxiv.org/abs/1612.03144) (with ResNet/ResNeXt)
-- [VGG16](https://arxiv.org/abs/1409.1556)
 
-Additional backbone architectures may be easily implemented. For more details about these models, please see [References](#references) below.
+Additional backbone architectures may be easily implemented. 
 
 ## License
-
-Detectron is released under the [Apache 2.0 license](https://github.com/facebookresearch/detectron/blob/master/LICENSE). See the [NOTICE](https://github.com/facebookresearch/detectron/blob/master/NOTICE) file for additional details.
+This project is released under the[MIT License](https://github.com/fangpengcheng95/Light-Head-R-CNN/blob/master/LICENSE) and  [Apache 2.0 license](https://github.com/facebookresearch/detectron/blob/master/LICENSE). 
 
 ## Citing Detectron
 
@@ -109,3 +96,4 @@ If bugs are found, **we appreciate pull requests** (including adding Q&A's to `F
 - [Fast R-CNN](http://arxiv.org/abs/1504.08083).
   Ross Girshick.
   IEEE International Conference on Computer Vision (ICCV), 2015.
+
